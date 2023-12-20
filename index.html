@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Sticky</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            background-color: black;
+            color: #fff;
+        }
+
+        section p {
+            font-size: 1.5rem;
+        }
+
+        header {
+            background-color: gray;
+            color: #fff;
+            font-size: 3rem;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque delectus, perspiciatis quaerat possimus
+            autem cumque? Est quis tenetur suscipit ab, odit voluptates doloremque maxime, voluptatibus, commodi porro
+            eligendi dignissimos eos.</p>
+        <header>
+            <h1>MyHeader</h1>
+        </header>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere corrupti ut repellendus quos aperiam
+            temporibus repellat voluptates id adipisci suscipit animi dolor amet, fugit consectetur culpa ratione
+            maxime, quasi tempora.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere corrupti ut repellendus quos aperiam
+            temporibus repellat voluptates id adipisci suscipit animi dolor amet, fugit consectetur culpa ratione
+            maxime, quasi tempora.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere corrupti ut repellendus quos aperiam
+            temporibus repellat voluptates id adipisci suscipit animi dolor amet, fugit consectetur culpa ratione
+            maxime, quasi tempora.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere corrupti ut repellendus quos aperiam
+            temporibus repellat voluptates id adipisci suscipit animi dolor amet, fugit consectetur culpa ratione
+            maxime, quasi tempora.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere corrupti ut repellendus quos aperiam
+            temporibus repellat voluptates id adipisci suscipit animi dolor amet, fugit consectetur culpa ratione
+            maxime, quasi tempora.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere corrupti ut repellendus quos aperiam
+            temporibus repellat voluptates id adipisci suscipit animi dolor amet, fugit consectetur culpa ratione
+            maxime, quasi tempora.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere corrupti ut repellendus quos aperiam
+            temporibus repellat voluptates id adipisci suscipit animi dolor amet, fugit consectetur culpa ratione
+            maxime, quasi tempora.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere corrupti ut repellendus quos aperiam
+                temporibus repellat voluptates id adipisci suscipit animi dolor amet, fugit consectetur culpa ratione
+                maxime, quasi tempora.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere corrupti ut repellendus quos aperiam
+                temporibus repellat voluptates id adipisci suscipit animi dolor amet, fugit consectetur culpa ratione
+                maxime, quasi tempora.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere corrupti ut repellendus quos aperiam
+                temporibus repellat voluptates id adipisci suscipit animi dolor amet, fugit consectetur culpa ratione
+                maxime, quasi tempora.</p>
+        </section>
+
+
+    <script>
+        let header = document.querySelector("header")
+        var sticky = header.offsetTop;
+
+        window.onscroll = function () { myFuction() }
+
+        function myFuction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
